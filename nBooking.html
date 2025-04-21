@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniket - GRP Tool</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+  <!-- HOME NAVBAR -->
+  <div class="container">
+    <div class="userNav">
+      <h2>Welcome Aniket</h2>
+    </div>
+    <div class="navBar">
+      <div class="navLogo">
+        <span>
+          <h1>Aniket</h1>
+        </span>
+        <span>
+          <h2>GRP Tool</h2>
+        </span>
+      </div>
+      <div class="navItem">
+        <div class="dropdownWrapper">
+          <a href="#">New Booking</a>
+          <div class="dropDown">
+            <a href="#">New Group Request</a>
+            <a href="#">Series Group Request</a>
+          </div>
+        </div>
+        <div class="dropdownWrapper">
+          <a href="#">Request Info</a>
+          <div class="dropDown">
+            <a href="./vRequest.html">View Request</a>
+            <a href="#">Make Payment</a>
+            <a href="#">Add Guest</a>
+            <a href="#">View Bookings</a>
+          </div>
+        </div>
+        <div class="dropdownWrapper">
+          <a href="#">User Details</a>
+          <div class="dropDown">
+            <a href="#">Add User</a>
+            <a href="#">View Users</a>
+          </div>
+        </div>
+        <div class="dropdownWrapper">
+          <a href="#">Reports</a>
+          <div class="dropDown">
+            <a href="#">Custom Report</a>
+          </div>
+        </div>
+        <div class="dropdownWrapper">
+          <a href="#">Support</a>
+          <div class="dropDown">
+            <a href="#">User Guide</a>
+            <a href="#">Report an Issue</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nBookingContainer">
+      <div class="homeDash">
+        <a href="./index.html">Home</a> / Dashboard
+        <h1>New adhoc group request
+        </h1>
+      </div>
+      <form>
+        <div class="requestGroup">
+          <div class="selectConataint">
+            <label for="groupName">Group Name *</label>
+            <input type="text" id="groupName" placeholder="Group name" name="groupName" required>
+          </div>
+          <div class="tripName">
+            <label for="oneWay">One-way</label>
+            <!-- <label for="roundTrip">Round-trip</label> -->
+          </div>
+          <div class="searchFlt">
+            <!-- First row -->
+            <div class="selectConataint">
+              <label for="origin">Origin *</label>
+              <input type="text" id="origin" placeholder="Enter origin city" name="origin" required>
+            </div>
+            <div class="selectConataint">
+              <label for="destination">Destination *</label>
+              <input type="text" id="destination" placeholder="Enter destination city" name="destination" required>
+            </div>
+            <div class="selectConataint">
+              <label for="departureDate">Departure Date *</label>
+              <input type="date" id="departureDate" name="departureDate" required>
+            </div>
+            <div class="selectConataint">
+              <label for="departureDate">Return Date *</label>
+              <input type="date" id="returnDate" name="departureDate" required>
+            </div>
+        
+            <!-- Second row -->
+            <div class="selectConataint">
+              <label for="fare">Expected fare / pax *</label>
+              <input type="text" id="fare" placeholder="Expected fare / pax" name="fare" required>
+            </div>
+            <div class="selectConataint">
+              <label for="guests">No of guests *</label>
+              <input type="number" id="guests" placeholder="Adult / Child / Infant" name="guests" required>
+            </div>
+            <div class="selectConataint">
+              <label for="airline">Preferred Airline *</label>
+              <input type="text" id="airline" placeholder="Optional airline name" name="airline" required>
+            </div>
+            <div class="selectConataint">
+              <label for="notes">Special Notes *</label>
+              <input type="text" id="notes" placeholder="Any specific request" name="notes" required>
+            </div>
+          </div>
+          <button class="fltSubmit">Submit</button>
+        </div>
+    </div>
+    </form>
+  </div>
+
+  <!-- HOME FOOTER  -->
+  <footer class="footer">
+    <p>&copy; 2025 Aniket. All rights reserved.</p>
+  </footer>
+  <script src="/JS/script.js"></script>
+</body>
+
+</html>
