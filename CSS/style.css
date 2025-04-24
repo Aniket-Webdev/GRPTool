@@ -1,6 +1,12 @@
 *{
+  box-sizing: border-box;
   padding: 0px;
   margin: 0px;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
 }
 
 /* USER NAVIGATION BAR */
@@ -249,4 +255,103 @@ input {
   bottom: 0;
   width: 100%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Responsive Media Queries */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+  .userNav {
+    flex-direction: column;
+    font-size: smaller;
+    padding: 10px;
+  }
+  .navBar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  .navLogo {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .navLogo span h1 {
+    font-size: 1.5rem;
+  }
+  .navLogo span h2 {
+    font-size: 1rem;
+  }
+  .navItem {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: medium;
+  }
+  .navItem a {
+    padding: 8px 12px;
+  }
+  .boxOne, .boxTwo {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cBox {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+  }
+  .homeConatiner, .nBookingContainer, .vRequestConatiner {
+    padding: 5px 5%;
+  }
+  .searchFlt {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .fltSubmit {
+    padding: 10px 25px;
+    font-size: medium;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .userNav {
+    font-size: x-small;
+    padding: 8px;
+  }
+  .navBar {
+    padding: 8px;
+  }
+  .navLogo span h1 {
+    font-size: 1.2rem;
+  }
+  .navLogo span h2 {
+    font-size: 0.8rem;
+  }
+  .navItem {
+    font-size: small;
+    gap: 5px;
+  }
+  .navItem a {
+    padding: 6px 8px;
+  }
+  .boxOne, .boxTwo {
+    margin-top: 15px;
+    gap: 15px;
+  }
+  .cBox {
+    font-size: 18px;
+    height: 40px;
+  }
+  .searchFlt {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .requestGroup input {
+    width: 100%;
+  }
+  .fltSubmit {
+    padding: 8px 20px;
+    font-size: small;
+  }
 }
